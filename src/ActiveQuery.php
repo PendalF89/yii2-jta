@@ -13,7 +13,7 @@ class ActiveQuery extends \yii\db\ActiveQuery
 
     private $_viaModels;
 
-    public function viaTable($tableName, $link, callable $callable = null, $pivotAttributes = [])
+    public function viaTable($tableName, $link, callable|null $callable = null, $pivotAttributes = [])
     {
 
         if(!is_array($pivotAttributes)){
